@@ -1,41 +1,51 @@
+body {
+    background-color:rgb(52, 55, 56);
+}
 .welcomeInfo {
-    background: rgb(110, 174, 190);
+    background: rgb(124, 112, 192);
     color: white;
     border-radius: 1em;
     padding: 1em;
     position: absolute;
-    top: 40%;
+    top: 30%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%)
 }
 
+
 #leftButton {
-    background-color: rgb(110, 174, 190);
+    background-color: rgb(124, 112, 192);
     border: .5px solid black;
     color: white;
     padding: 5px 10px;
     text-align: center;
     display: inline-block;
-    font-size: 20px;
+    font-size: 30px;
     position: absolute;
     cursor: pointer;
-    top: 52%;
-    left: 23%;
+    top: 45%;
+    left: 20%;
     text-decoration:none;
 }
 
 #rightButton {
-    background-color: rgb(110, 174, 190);
+    background-color: rgb(124, 112, 192);
     border: .5px solid black;
     color: rgb(255, 255, 255);
     padding: 5px 10px;
     text-align: center;
     display: inline-block;
-    font-size: 20px;
+    font-size: 30px;
     position: absolute;
     cursor: pointer;
-    top: 52%;
-    right: 23%;
+    top: 45%;
+    right: 20%;
     text-decoration:none;
 }
+
+#leftButton:hover, #rightButton:hover {
+    background-color: rgb(167, 155, 235);
+}
+
+
