@@ -19,25 +19,57 @@
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png"> -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="EnterReflection.css">
+  <link rel="stylesheet" href="EnterData.css">
 
   <!-- <link rel="stylesheet" href="css/styles.css?v=1.0"> -->
 
 </head>
     <body>
     
-    <div class="container">
+    <div class="container"> 
       <form action="/action_page.php">
       <div class="row">
-        <div class="col-25">
-          <label for="fname">Date:</label>
+        <div class="sideLabels">
+          <label for="date">Date</label>
         </div>
-        <div class="col-75">
-          <input type="text" id="fname" name="firstname" placeholder="XX-XX-XXX">
+        <div class="col-15">
+          <input type="text" id="date" name="date" placeholder="XX-XX-XXX">
         </div>
       </div>
       <div class="row">
-        <div class="col-25">
+        <div class="sideLabels">
+          <label for="hoursWorked">Hours Worked</label>
+        </div>
+        <div class="col-15">
+          <input type="text" id="hoursWorked" name="hoursWorked" placeholder="e.g. 5">
+        </div>
+      </div>
+      <div class="row">
+        <div class="sideLabels">
+          <label for="hoursExercised">Hours Exercised</label>
+        </div>
+        <div class="col-15">
+          <input type="text" id="hoursExercised" name="hoursExercised" placeholder="e.g. 1">
+        </div>
+      </div>
+      <div class="row">
+        <div class="sideLabels">
+          <label for="hoursSlept">Hours Slept</label>
+        </div>
+        <div class="col-15">
+          <input type="text" id="hoursSlept" name="hoursSlept" placeholder="e.g. 6">
+        </div>
+      </div>
+      <div class="row">
+        <div class="sideLabels">
+          <label for="moodRating">Mood Rating</label>
+        </div>
+        <div class="col-15">
+          <input type="text" id="moodRating" name="moodRating" placeholder="Scale of 1 - 10">
+        </div>
+      </div>
+      <div class="row">
+        <div class="sideLabels">
           <label for="subject">Reflection</label>
         </div>
         <div class="col-75">
@@ -51,7 +83,7 @@
       </form>
     </div>
 
-    <a href='../EnterDataOrReflection.html' id = "backButton">
+    <a href='../EditOrEnter.html' id = "backButton">
         Back
       </a>
   

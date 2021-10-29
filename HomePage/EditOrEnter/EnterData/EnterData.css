@@ -37,7 +37,7 @@ body {
   
   
   .container {
-    padding: 260px 0px
+    padding: 200px 0px;
     /*
     border-radius: 5px;
     background-color: #f2f2f2;
@@ -45,12 +45,18 @@ body {
     */
   }
   
-  .col-25 {
+  .sideLabels {
     float: left;
-    width: 25%;
+    width: 13%;
     margin-top: 6px;
   }
   
+  .col-15 {
+    float: left;
+    width: 15%;
+    margin-top: 6px;
+  }
+
   .col-75 {
     float: left;
     width: 75%;
