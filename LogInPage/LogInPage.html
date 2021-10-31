@@ -26,29 +26,50 @@
 </head>
 
 <body>
- <form action="action_page.php" method="post">
+ <!--form action="action_page.php" method="post">  -->   
 
-  <div class="container">
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
+ <!---
+ <div class="login">    
+  <form id="login" method="get" action="login.php">    
+      <label><b>User Name     
+      </b>    
+      </label>    
+      <input type="text" name="Uname" id="Uname" placeholder="Username">    
+      <br><br>    
+      <label><b>Password     
+      </b>    
+      </label>    
+      <input type="Password" name="Pass" id="Pass" placeholder="Password">    
+      <br><br>    
+      <input type="button" name="log" id="log" onclick="check(this.form)" value="Log In Here">       
+      <br><br>    
+      <input type="checkbox" id="check">    
+      <span>Remember me</span>    
+      <br><br>    
+      Forgot <a href="#">Password</a>    
+  </form>     
+</div>    
+-->
 
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+<body>
+  <h1> Login </h1>
+  <div class="container"></div>
+  <form name="login">
+  <span id = "user">Username</span> <input type="text" name="userid"/> <br> <br>
+  <span id = "password">Password</span> <input type="password" name="pswrd"/>
+  <input type="button" onclick="check(this.form)" value="Login" class="log"/>
 
-    <button type="submit">Login</button>
-    <label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label>
-  </div>
+  <!--
+  <input type="checkbox" id="check">    
+        <span>Remember me</span>    
+        <br><br>    
+        Forgot <a href="#">Password</a>  
 
-  <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn">Cancel</button>
-    <span class="psw">Forgot <a href="#">password?</a></span>
-  </div>
-</form>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>  
-<script src="js/scripts.js"></script>
+  -->
+  
+  </form>
+</div>
+
+<script src = "LogInPage.js"></script>
 </body>
 </html>
