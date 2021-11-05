@@ -1,75 +1,32 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>Log In</title>
-  <meta name="description" content="Log In Page">
-  <meta name="author" content="SitePoint">
-
-  <meta property="og:title" content="A Basic HTML5 Template">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/">
-  <meta property="og:description" content="A simple HTML5 Template for new projects.">
-  <meta property="og:image" content="image.png">
-
- <!--  <link rel="icon" href="/favicon.ico">
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png"> -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
   <link rel="stylesheet" href="LogInPage.css">
-
-  <!-- <link rel="stylesheet" href="css/styles.css?v=1.0"> -->
-
+  <script defer src="LogInPage.js"></script>
 </head>
 
 <body>
- <!--form action="action_page.php" method="post">  -->   
-
- <!---
- <div class="login">    
-  <form id="login" method="get" action="login.php">    
-      <label><b>User Name     
-      </b>    
-      </label>    
-      <input type="text" name="Uname" id="Uname" placeholder="Username">    
-      <br><br>    
-      <label><b>Password     
-      </b>    
-      </label>    
-      <input type="Password" name="Pass" id="Pass" placeholder="Password">    
-      <br><br>    
-      <input type="button" name="log" id="log" onclick="check(this.form)" value="Log In Here">       
-      <br><br>    
-      <input type="checkbox" id="check">    
-      <span>Remember me</span>    
-      <br><br>    
-      Forgot <a href="#">Password</a>    
-  </form>     
-</div>    
--->
-
-<body>
-  <h1> Login </h1>
-  <div class="container"></div>
-  <form name="login">
-  <span id = "user">Username</span> <input type="text" name="userid"/> <br> <br>
-  <span id = "password">Password</span> <input type="password" name="pswrd"/>
-  <input type="button" onclick="check(this.form)" value="Login" class="log"/>
-
-  <!--
-  <input type="checkbox" id="check">    
-        <span>Remember me</span>    
-        <br><br>    
-        Forgot <a href="#">Password</a>  
-
-  -->
+  <main id="main-holder">
+    <h1 id="login-header">Login</h1>
+    
+    <div id="login-error-msg-holder">
+      <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
+    </div>
+    
+    <form id="login-form">
+      <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
+      <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
+      <input type="submit" value="Login" id="login-form-submit">
+      <input type="button" onclick ="createAccountRedirect()" value="Create Account" id="create-account">
+    </form>
   
-  </form>
-</div>
+  </main>
 
-<script src = "LogInPage.js"></script>
+
 </body>
+
 </html>
