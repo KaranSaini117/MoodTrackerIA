@@ -1,6 +1,5 @@
 const loginForm = document.getElementById("login-form");
 const loginButton = document.getElementById("login-form-submit");
-const loginErrorMsg = document.getElementById("login-error-msg");
 
 loginButton.addEventListener("click", (e) => {
     e.preventDefault();
@@ -10,8 +9,10 @@ loginButton.addEventListener("click", (e) => {
     if (username === "user" && password === "password") {
         alert("You have successfully logged in.");
         window.location.replace('../HomePage/HomePage.html');
+    } else if (username === "" && password == "") {
+        alert("Enter username and password");
     } else {
-        loginErrorMsg.style.opacity = 1;
+        alert("Invalid username or password.");
     }
 })
 
