@@ -1,6 +1,10 @@
 const loginForm = document.getElementById("login-form");
 const loginButton = document.getElementById("login-form-submit");
 
+function createAccountRedirect() {
+    window.location.replace('../CreateAccount.html');
+}
+
 loginButton.addEventListener("click", (e) => {
     e.preventDefault();
     const formUsername = loginForm.username.value;
@@ -34,6 +38,3 @@ loginButton.addEventListener("click", (e) => {
     }
 })
 
-function createAccountRedirect() {
-    window.location.replace('../CreateAccount.html');
-}
