@@ -1,10 +1,12 @@
 const loginForm = document.getElementById("login-form");
 const loginButton = document.getElementById("login-form-submit");
+const createAccountButton = document.getElementById("create-account");
 
-function createAccountRedirect() {
+createAccountButton.addEventListener("click", (e) => {
     window.location.replace('../CreateAccount.html');
-}
+}); 
 
+// event listener
 loginButton.addEventListener("click", (e) => {
     e.preventDefault();
     const formUsername = loginForm.username.value;
@@ -13,22 +15,23 @@ loginButton.addEventListener("click", (e) => {
 
     var mysql = require('mysql');
 
+    // create connection
     var con = mysql.createConnection({
         host: "localhost",
-        user: "yourusername",
-        password: "yourpassword",
+        user: "root",
+        password: "password",
         database: "mydb"
     });
 
-    alert("Connected"); 
-
+    // use sql query to select the password from db
     var sql = 'SELECT * FROM login WHERE username = ?';
     con.query(sql, [formUsername], function (err, result) {
         if (err) throw err;
         dbPassword = result[0].password;
     });
 
-    if (formPassword === dpPassword) {
+    // check if the password entered by the form is the same as the db
+    if (formPassword === dbPassword) {
         alert("You have successfully logged in.");
         window.location.replace('../HomePage/HomePage.html');
     } else if (formUsername === "" || formPassword === "") {
@@ -36,5 +39,5 @@ loginButton.addEventListener("click", (e) => {
     } else {
         alert("Invalid username or password.");
     }
-})
+});
 
