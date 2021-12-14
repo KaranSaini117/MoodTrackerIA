@@ -17,34 +17,34 @@ createAccountButton.addEventListener("click", (e) => {
       alert("Passwords do not match");
   // if everything okay w/ user & pw, add them to the database
   } else {
-    // connect with db
-    var mysql = require('mysql');
-    var con = mysql.createConnection({
-        host: "localhost",
-        user: "root",
-        password: "password",
-        database: "mydb"
-    });
+    // // connect with db
+    // var mysql = require('mysql');
+    // var con = mysql.createConnection({
+    //     host: "localhost",
+    //     user: "root",
+    //     password: "password",
+    //     database: "mydb"
+    // });
     
-    con.connect(function(err) {
-      if (err) throw err;
-      console.log("Connected!");
-      alert("hello");
-      // sql query to insert user and pw into db
-      var sql = "INSERT INTO login (username, password) VALUES ?";
-      var value = [[form.userid.value, form.pswrd.value]]
-      con.query(sql, [value], function (err, result) {
-        if (err) throw err;
-        console.log("1 record inserted: " + result.insertID);
-      });
-    });
+    // con.connect(function(err) {
+    //   if (err) throw err;
+    //   console.log("Connected!");
+    //   alert("hello");
+    //   // sql query to insert user and pw into db
+    //   var sql = "INSERT INTO login (username, password) VALUES ?";
+    //   var value = [[form.userid.value, form.pswrd.value]]
+    //   con.query(sql, [value], function (err, result) {
+    //     if (err) throw err;
+    //     console.log("1 record inserted: " + result.insertID);
+    //   });
+    // });
   
     alert("Account Created Successfully");
     
     // after account made, redirect to home page
-    window.location.replace('HomePage/HomePage.html');
+    window.location.replace('../HomePage/HomePage.html');
   }
-})
+});
 
 // js function to go back to previous page
 function goBack() {

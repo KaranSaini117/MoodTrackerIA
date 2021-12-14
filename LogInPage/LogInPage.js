@@ -11,7 +11,7 @@ function check(form)/*function to check userid & password*/
   }
  else
  {
-   alert("Error Password or Username")/*displays error message*/
+   alert("Incorrect Username or Password")/*displays error message*/
   }
 } 
 createAccountButton.addEventListener("click", (e) => {
