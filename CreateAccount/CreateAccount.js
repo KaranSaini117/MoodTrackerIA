@@ -48,7 +48,7 @@ createAccountButton.addEventListener("click", (e) => {
 
 // js function to go back to previous page
 function goBack() {
-  window.location.replace('LogInPage/LogInPage.html');
+  window.location.replace('../LogInPage/LogInPage.html');
 }
 
 
