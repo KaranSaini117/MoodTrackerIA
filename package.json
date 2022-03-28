@@ -1,0 +1,20 @@
+{
+  "name": "express",
+  "version": "1.0.0",
+  "description": "This is my IB Computer Science HL internal assessment as a part of the International Baccalaureate program.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KaranSaini117/MoodTrackerIA.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KaranSaini117/MoodTrackerIA/issues"
+  },
+  "homepage": "https://github.com/KaranSaini117/MoodTrackerIA#readme"
+}
